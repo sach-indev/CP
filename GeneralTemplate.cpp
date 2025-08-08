@@ -1,18 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
- 
-int fact5(int a)
-{
-    int cnt = 0;
-    while(a%5==0)
-    {
-        cnt++;
-        a/=5;
-    }
-
-    return cnt;
-}
 
 void solve()
 {
