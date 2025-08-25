@@ -12,7 +12,7 @@ void solve()
     isprime[0] = false, isprime[1] = false;
     vector<int> primes;
 
-    //pre-computing primes
+    //pre-computing primes Using seive of estrathos
     for(int i=2; i<check; i++)
     {
         if(isprime[i])
@@ -40,8 +40,9 @@ void solve()
 
     if(n!=1) ans = n;
 
-    //printing the answer
     cout<<ans<<endl;
+
+    //CONCLUSION: Interesting concept of seive of estrathos. I like the idea of removing factors of a number and only storing till we want the primes.
 
 }
  
@@ -53,5 +54,3 @@ signed main()
 	    solve();
 	}
 }
-
-//Conclusion : Learned about Sieve of Eratosthenes
