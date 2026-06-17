@@ -5,8 +5,7 @@ Case 1: f1 > n-f1
     Now in this case since we can pair each element of f1 with other elements so we do so. Than the only elements left unpaire are f1 - (n-f1) which is our answer.
 
 Case 2: f1 <= n-f1
-    Now this part is tricky. We see an obvious thing here that we can take the two largest groups and remove 1 element each from them. As we are removing 2 elements on each step so the parity will remain invariant. Also inductively we can see that if the point is valid for all groups <N than somehow it's obvious that we can just
-    do similar stuff and suppose we took f1 & f2 and did the operation that either a) we have a new largest group but the condition fmax <= n - fmax still holds or b) f1 is still the largest group but the condition still holds. Hence by proof of induction, we have proved the answer is n%2 where n is the number of elments.
+    Now this part is tricky. We see an obvious thing here that we can take the two largest groups and remove 1 element each from them. As we are removing 2 elements on each step so the parity will remain invariant. Also inductively we can see that if the point is valid for all groups <N than somehow it's obvious that we can just do similar stuff and suppose we took f1 & f2 and did the operation that either a) we have a new largest group but the condition fmax <= n - fmax still holds or b) f1 is still the largest group so the condition still holds. Hence by proof of induction, we have proved the answer is n%2 where n is the number of elments.
 */
 
 #include <bits/stdc++.h>
